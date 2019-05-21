@@ -1,7 +1,8 @@
+<!-- Thanks for https://github.com/hackerzhou/Love -->
 <!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-	<title>Our Love Story</title>
+	<title>Happy Birthday For U</title>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<style type="text/css">
 		@font-face {
@@ -11,69 +12,59 @@
 	</style>
 	<link href="css/default.css" type="text/css" rel="stylesheet">
 	<script type="text/javascript" src="js/jquery.js"></script>
-	<script type="text/javascript" src="js/garden.js"></script>
-    <script type="text/javascript" src="js/functions.js"></script>
+	<script type="text/javascript" src="js/garden_dev.js"></script>
+    <script type="text/javascript" src="js/functions_dev.js"></script>
 </head>
 
 <body>
 	<div id="mainDiv">
 		<div id="content">
 			<div id="code">
-				<span class="comments">/**</span><br />
-				<span class="space"/><span class="comments">* We are both Fudan SSers and programmers,</span><br />
-				<span class="space"/><span class="comments">* so I write some code to celebrate our 1st anniversary.</span><br />
-				<span class="space"/><span class="comments">*/</span><br />
-				Boy i = <span class="keyword">new</span> Boy(<span class="string">"hackerzhou"</span>);<br />
-				Girl u = <span class="keyword">new</span> Girl(<span class="string">"MaryNee"</span>);<br />
-				<span class="comments">// Nov 2, 2010, I told you I love you. </span><br />
-				i.love(u);<br />
-				<span class="comments">// Luckily, you accepted and became my girlfriend eversince.</span><br />
-				u.accepted();<br />
-				<span class="comments">// Since then, I miss u every day.</span><br />
-				i.miss(u);<br />
-				<span class="comments">// And take care of u and our love.</span><br />
-				i.takeCareOf(u);<br />
-				<span class="comments">// You say that you won't be so easy to marry me.</span><br />
-				<span class="comments">// So I keep waiting and I have confidence that you will.</span><br />
-				<span class="keyword">boolean</span> isHesitate = <span class="keyword">true</span>;<br />
-				<span class="keyword">while</span> (isHesitate) {<br />
-				<span class="placeholder"/>i.waitFor(u);<br />
-				<span class="placeholder"/><span class="comments">// I think it is an important decision</span><br />
-				<span class="placeholder"/><span class="comments">// and you should think it over.</span><br />
-				<span class="placeholder"/>isHesitate = u.thinkOver();<br />
-				}<br />
-				<span class="comments">// After a romantic wedding, we will live happily ever after.</span><br />
-				i.marry(u);<br />
-				i.liveHappilyWith(u);<br />
+				<span > 程序员总要做一些程序员要做的事情啦 </span> <br /> 
+				<span > 今年要给你过一个浪漫的生日，不然总觉得对不住你呢 </span> <br /> 
+				<br />
+				<span > 2016年1月1日，我们突然就在一起了呢 </span> <br /> 
+				<span > 从高中到大学，从躲着老师到现在分隔异地 </span> <br /> 
+				<span > 我们已经一起度过了三年的时间 </span> <br /> 
+				<span > 我们有争吵，有冷战，有濒临分手的绝望和无奈 </span> <br /> 
+				<span > 我们也有在一起快乐的时光，一起玩，一起笑，一起谈到未来开心的像个孩子 </span> <br /> 
+				<br />
+				<span > 我见证了你一步一步的变得更加的成熟 </span> <br /> 
+				<span > 见证了你生活里的好多重要的事情 </span> <br /> 
+				<span > 当然，也由于异地缺席了好多本该有我的场合 </span> <br /> 
+				<span > 希望我们可以最后还走在一起 </span> <br /> 
+				<span > 当然，是以爱人的身份 </span> <br /> 
+				<br />
+				<span > 亲爱的晓晶，祝你生日快乐 </span> <br /> 
+				<span > 接下来的这一年，你还要面对好多的挑战 </span> <br /> 
+				<span > 我祝你你可以像往常一样披荆斩棘，马到成功 </span> <br /> 
+				<span > 当然也要祝你还是年轻美丽，窈窕动人 </span> <br /> 
+				<br />
+				<span > 我爱你，如往常一样</span> <br />
 			</div>
 			<div id="loveHeart">
 				<canvas id="garden"></canvas>
 				<div id="words">
 					<div id="messages">
-						Minyue, I have fallen in love with you for
+						晓晶同学, 我们已经在一起
 						<div id="elapseClock"></div>
 					</div>
 					<div id="loveu">
 						Love u forever and ever.<br/>
-						<div class="signature">- hackerzhou</div>
+						<div class="signature">- 小巩</div>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div id="copyright">
-			Inspired by <a href="http://www.openrise.com/lab/FlowerPower/">FlowerPower</a> project.<br />
-			Copyright © 2011 <a href='http://hackerzhou.me'>hackerzhou.me</a> 2009-2011
+			Inspired by <a href="https://github.com/hackerzhou/Love/">hackerzhou's</a> project.<br />
+			Thanks for your work.
 		</div>
 	</div>
 	<script type="text/javascript">
 		var offsetX = $("#loveHeart").width() / 2;
 		var offsetY = $("#loveHeart").height() / 2 - 55;
-		var together = new Date();
-		together.setFullYear(2010, 10, 2);
-		together.setHours(20);
-		together.setMinutes(0);
-		together.setSeconds(0);
-		together.setMilliseconds(0);
+		var together = new Date("2016-01-01 00:00:00");
 		
 		if (!document.createElement('canvas').getContext) {
 			var msg = document.createElement("div");
@@ -87,7 +78,7 @@
 		} else {
 			setTimeout(function () {
 				startHeartAnimation();
-			}, 5000);
+			}, 6000);
 
 			timeElapse(together);
 			setInterval(function () {
